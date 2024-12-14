@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내장객체 날짜 정보 객체</title>
+</head>
+<body>
+  <script>
+    var today = new Date();//내장객체- 현재의 날짜정보로 날짜객체 생성
+    var nowMonth = today.getMonth(),//0-1월,1-2월, 10-11월
+        nowDate = today.getDate(),
+        nowDay = today.getDay();//월-1, 화-2,
+    document.write("<h1>오늘 날짜 정보</h1>");   
+    document.write("현재 월:"+nowMonth,"<br>");   
+    document.write("현재 일:"+nowDate, "<br>");   
+    document.write("현재 요일:"+nowDay,"<br>");
+
+    document.write("<hr>");
+    document.write("년도:"+today.getFullYear(),"<br>");
+    document.write("현재 시간:"+today.getHours(),"<br>");
+    document.write("현재 분:"+today.getMinutes(),"<br>");
+    document.write("현재 초:"+today.getSeconds(),"<br>");
+    document.write("1970년1월1일부터 경과된시간:"+today.getTime(),"<br>");
+    document.write("GMT표준시"+today.toGMTString(),"<br>");
+    
+    //사용자가 날짜정보를직접 입력하여 날짜객체 생성
+    var worldcup = new Date(2002,4,31);
+    var theMonth = worldcup.getMonth(), // 월 - 1 로 출력됨.
+        theDate = worldcup.getDate(),
+        theDay = worldcup.getDay();
+
+    document.write("<h1>월드컵 날짜 정보</h1>");
+    document.write("2002월드컵 몇 월:"+theMonth, "<br>");
+    document.write("2002월드컵 몇 일:"+theDate, "<br>");
+    document.write("2002월드컵 무슨요일:"+theDay,"<br>");
+
+  </script>
+</body>
+</html>

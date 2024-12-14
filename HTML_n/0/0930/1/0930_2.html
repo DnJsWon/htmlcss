@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 400px;
+            border: 1px solid blakc;
+            background: red;
+        }
+        .grad1{
+            background: radial-gradient(white, yellow, red);
+        }
+        .grad2{
+            background: radial-gradient(circle,white, yellow, red);
+        }
+        /* 비율에 맞추느냐 맞추지않느냐 차이 */
+        .grad3{
+            background: radial-gradient(circle at 10% 10%, white, yellow, red);
+        }
+        .grad4{
+            background: radial-gradient(circle at 10% 10%, white, yellow 20%, red);
+        }
+    </style>
+</head>
+<body>
+    <div class = "grad1">
+        
+    </div>
+    <hr>
+    <div class="grad2">
+
+    </div>
+    <hr>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   var a=10;
+   var b = 20;
+   var c = 10;
+   var f = "20";
+   var result;//undefined
+
+   result = b==f; // 20 == "20",값비교
+   document.write(result,"<br>");
+
+   result = b===f; //20 === "20", 값과 타입 비교
+  document.write(result,'<br>');
+
+  //논리 연산자 boolean값 비교
+  var a=10;
+  var b=20;
+  var m=30;
+  var n=40;
+  var result;
+
+  result = a>b || b>=m || m > n;// false || false|| false
+  document.write(result,'<br>');
+
+  result = !(a>b); // !false -> true
+  document.write(result,'<br>');
+  
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

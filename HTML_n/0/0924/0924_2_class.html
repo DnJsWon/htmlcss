@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 클래스 선택자 .클래스명 */
+        .bluetext{
+            color: rgb(255, 0, 0);
+        }
+
+        h2 .bluetext{color: blue;} /* h2 태그 내의 .bluetext*/
+        h2.accent{
+            color: yellow; /* 클래스가 accent 인 h2 태그 */
+            background-color: #222;/* #222222*/
+            padding: 5px;}
+        
+        #container{
+            width: 600px;
+            padding: 15px;
+            border: 1px dotted gray; /* 선굵기 모양 색상 지정 가능 */
+
+        }
+        h2, p{
+            background-color: aliceblue;
+        }
+        p{
+            background-color: chartreuse;
+        }
+        p{
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2 class="bluetext">eeeeeeeeeeeeeeeeee<span class="bluetext">eeeee</span>eeeeeeeeeeeeeeee</h2>
+        <h2 class="accent">tkfkadrp rncpwjrdmfh ehdnadmf wnsms cor</h2>
+
+        <p>tkfkadprp rncpwjrdmfh <span class="bluetext">ehdnadmf wn</span>sms cor <br>
+        dnflsms duftlagl tksms tkfkaemfdprp ehdnadl ehlrh tlvtmqslek. <br>
+        dnflsms corvkfdldlqslek. cor tkfk. </p>
+
+        <p class="bluetext">wjdqhdml wlfmarlfdmf aksemfdj Qfkfmrp dnjsgksms rhtdmfh rkehfhr ehdhkwnsms cordlslRks tkfkrh</p>
+    </div>
+</body>
+</html>

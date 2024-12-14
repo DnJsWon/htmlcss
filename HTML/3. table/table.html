@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 태그</title>
+
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th{
+            background-color: beige;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>표를 만드는 태그</h1>
+    <table>
+        <tr> <!-- 테이블의 행을 만드는 태그 -->
+            <td>표의 셀1</td> <!-- 테이블의 열을 만드는 태그 -->
+            <td>표의 셀2</td>
+            <td>표의 셀3</td>
+        </tr>
+        <tr>
+            <td>표의 셀4</td>
+            <td>표의 셀5</td>
+            <td>표의 셀6</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <!-- 표의 제목을 만드는 태그 -->
+        <caption>표의 제목</caption>
+        <tr>
+            <th>이름</th> <!-- 테이블의 제목 열을 만드는 태그 -->
+            <th>나이</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>30</td>
+            <td>광산구</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>전화번호부</caption>
+        <thead>
+            <tr>
+                <!-- <th>성</th> -->
+                <th colspan = "2">이름</th>
+                <th>나이</th>
+                <th>전화번호</th>
+            </tr>
+        </thead>
+        <tr>
+            <td rowspan = "2">홍</td>
+            <td rowspan = "2">길동</td>
+            <td rowspan = "2">40</td>
+            <td>010-1111-1111</td>
+        </tr>
+        <tr>
+            <!-- <td>홍</td>
+            <td>길동</td>
+            <td>40</td> -->
+            <td>010-8765-1111</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method: get 주소창에 데이터를 전달 ?
+                 post body에 데이터를 전달 -->
+    <form action="https://www.naver.com" method="get">
+        <input type="text" title="검색" name="search"> <!-- name을 붙여서 데이터 전달 -->
+        <input type="submit" value = "검색">
+    </form>
+
+    <form action="https://search.naver.com/search.naver" mithod="get">
+        <input type="hidden" name="ie" value="uft8">
+        <input title="검색" name="query"> <!-- name을 붙여서 데이터 전달 -->
+        <input type="submit" value = "검색">
+    </form>
+
+    <hr>
+    <form action="">
+        <input type="radio" value="독서" name="hobby">독서<br>
+        <input type="radio" value="독서" name="hobby">독서<br>
+        <input type="radio" value="독서" name="hobby">독서<br>
+
+        <label>독서<input type="radio" value="독서" name="hobby"></label><br>
+        <label>독서<input type="radio" value="독서" name="hobby"></label><br>
+        <label>독서<input type="radio" value="독서" name="hobby"></label><br>
+        <input type="submit" value="전송">
+
+    </form>
+
+    <!-- fieldset 관련 -->
+
+    
+</body>
+</html>
+
+
+
+<!-- 
+form은 데이터를 전달하기 위함 
+from - frontend -  action에 지정한 위치 - backend(spring, jsp, asp, php)
+
+데이터 전달 방식 2가지
+get 방식 : 주소창에 데이터 전달
+post 방식: body에 데이터 전달
+-->

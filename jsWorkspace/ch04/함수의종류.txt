@@ -1,0 +1,19 @@
+1. 매개변수 없고, 리턴 없는 함수
+function myFun1(){
+ console.log('hello'); 
+}
+
+2. 매개변수 없고, 리턴 있는 함수
+function myFun2(){
+ return  'hello';
+}
+
+3. 매개변수 있고, 리턴 없는 함수
+function myFun3(msg){
+ console.log(msg); 
+}
+
+4. 매개변수 있고, 리턴 있는 함수
+function myFun4(msg){
+ return  "hello"+msg;
+}

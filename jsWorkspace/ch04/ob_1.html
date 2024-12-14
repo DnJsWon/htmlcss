@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>사용자 정의 객체</title>
+</head>
+<body>
+  <script>
+    //객체 생성자 함수 Object()를 이용할 객체 생성 
+    var tv = new Object();
+    //생성된 객체에 필요한 속성 추가
+    //객체 참조변수.속성명=값
+    tv.color = "white";
+    tv.price = 300000;
+    //생성된 객체에 메소드 추가
+    tv.info = function(){
+      document.write("tv 색상: "+this.color, "<br>");
+      document.write("tv 가격: "+this.price, "<br>");
+    }
+    /*
+      { color:"white",
+        price: 300000,
+        info:fucntion(){}
+      }  
+    */
+     document.write("<h1>tv 객체 메소드 호출</h1>");
+     tv.info();
+
+     // javascript object notation(JSON)방식으로 객체 생성 {}
+    var car = {
+      color:"black",
+      price:500000,
+      info:function(){
+        document.write("car 색상: "+this.color, "<br>");
+        document.write("car 가격: "+this.price, "<br>");
+      }
+    }
+    //생성된 객체 내의 메소드 호출
+    document.write("<h1>car 객체 메소드 호출</h1>");
+    car.info();//참조변수.함수명();
+    
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var box;//undefined
+    document.write(box+'<br>');
+    /* ==는 값만 비교, === 타입까지 비교 */
+    if(box===null){
+      document.write("undefined"+"<br>");
+    }
+    box=null;
+    if(box===undefined){
+      document.write("undefined"+"<br>");
+    }
+    document.write(box+'<br>');
+    box=100;
+    document.write(box+'<br>');
+    box=30;//자바스크립트는 값이 저장될때 타입 결정됨.
+    document.write(box+'<br>');
+    document.write(typeof(box)+'<br>');
+    box="hello";
+    document.write(typeof(box)+'<br>');
+  </script>
+</body>
+</html>

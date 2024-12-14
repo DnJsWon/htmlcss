@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> window 객체 </title>
+  <script>
+    var addNum = 0;
+    var subNum = 1000;
+    // function myfun(){}
+  //내장함수
+  //setInterval(콜백함수,간격시간);
+  //setInterval함수는 id를 가짐
+    var auto_1 = setInterval(function(){
+      addNum++;
+      console.log("addNum: "+ addNum);
+    },3000);//함수
+
+    var auto_2 = setInterval(function(){
+      subNum--;
+      console.log("subNum: "+ subNum);
+    },3000);
+    
+    console.log("auto_1:",auto_1);
+    console.log("auto_2:",auto_2);
+  </script>
+</head>
+<body>
+  <h1>일정 시간 간격으로 값 증감시키기</h1>
+  <p> 콘솔 패널을 열어 확인하세요. </p>
+  <!-- 일정간격 반복 처리 정지 clearInterval(setInterval함수 id) -->
+  <button onclick="clearInterval(auto_1)">증가 정지</button>
+  <button onclick="clearInterval(auto_2)">감소 정지</button>
+</body>
+</html>

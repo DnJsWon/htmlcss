@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ajax </title>
+  <script src="js/jquery.js"></script>
+  <script>
+    $(function(){
+      $.ajax({
+        url:"js/dataset.xml",//요청 경로
+        dataType:"xml", //응답데이타 타입
+        success:function(data){
+          //파일내 "record" 요소를 찾아서 배열로 전달
+          var $data = $(data).find("record"); //요소찾기 find(요소명);
+          console.log($data);
+
+          if($data.length > 0 ){
+            var tb = $("<table />");
+            $.each($data, function(i, o){
+              var $id = $(o).find("id").text();//find(요소명)
+              //console.log(i,$id, o);
+              var $first_name = $(o).find("first_name").text(); //find(요소명)
+              var $last_name = $(o).find("last_name").text();
+              var $email = $(o).find("email").text();
+              var $gender = $(o).find("gender").text();
+              
+              var row = $("<tr />").append(
+                 $("<td />").text($id),
+                 $("<td />").text($first_name),
+                 $("<td />").text($last_name),
+                 $("<td />").text($email),
+                 $("<td />").text($gender)
+                );
+                tb.append(row);
+            });
+            $(".wrap").append(tb);
+          }
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="wrap"></div>
+</body>
+</html>

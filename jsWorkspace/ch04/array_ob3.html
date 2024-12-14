@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 배열 객체 </title>
+</head>
+<body>
+  <script>
+  var greenArr = ["교대","방배","강남"];
+  var yellowArr = ["미금","정자","수서"];
+      
+  greenArr.splice(2,1,"서초","역삼");//index2번에 삽입, 1개의 객체 삭제후 삽입
+  console.log(greenArr);
+
+  //객체 추출
+  //var data1 = yellowArr.pop();// [0,1,2] index번호가 나중이것 추출
+  //var data2 = yellowArr.shift();// index번호가 앞인것 추출
+  console.log('----------------------------');
+  console.log(yellowArr.pop(), yellowArr);//뒤에서 부터 삭제
+  console.log(yellowArr.pop(), yellowArr);
+  console.log(yellowArr.pop(), yellowArr);
+  console.log(yellowArr);
+  console.log('----------------------------');
+
+
+   yellowArr = ["미금","정자","수서"];
+  console.log('----------------------------');
+  console.log(yellowArr);
+  console.log(yellowArr.shift(), yellowArr); //앞에서 부터 삭제
+  console.log(yellowArr.shift(), yellowArr);
+  console.log(yellowArr.shift(), yellowArr);
+  console.log('----------------------------');
+
+  console.log('----------------------------');
+  console.log(yellowArr.push("미금"), yellowArr);//하나씩 저장 
+  console.log(yellowArr.push("정자"), yellowArr);
+  console.log(yellowArr.push("수서"), yellowArr);
+  console.log('----------------------------');
+
+
+   yellowArr = [];
+  console.log('----------------------------');
+  console.log(yellowArr);
+  console.log(yellowArr.unshift("수서"), yellowArr); //앞에서 부터 삽입
+  console.log(yellowArr.unshift("정자"), yellowArr);
+  console.log(yellowArr.unshift("미금"), yellowArr);
+  console.log('----------------------------');
+
+ // pop() <-> push(), shift() <-> unmshift()
+
+ 
+
+  
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            background-color: cornflowerblue;
+            margin: 10px auto;
+            width: 60%;
+        }
+        ul:hover{display: none;}
+        nav ul li{
+            /* nav안의 ul안의 li, 지금은 그냥 li만 입력해도 같은 효과*/
+            display: inline-block;
+            /* display: none; 화면에 안보임, 영역도 차지하지 않음, 마우스 위치 시 표시되는 형식으로 사용 */
+            border-top: 1px solid black;
+            padding: 5px;
+            margin: 10px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>애완견 종류</li>
+            <li>입양하기</li>
+            <li>건강돌보기</li>
+            <li>더불어살기</li>
+        </ul>
+    </nav>
+</body>
+</html>

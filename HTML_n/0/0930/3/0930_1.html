@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .box1{
+            box-shadow: 2px -2px 5px 0px black;
+            /* 가로 2px, 위로 2px, 흐림정도5px, 번짐없음, 검정색 그림자*/
+        }
+        .box2{
+            box-shadow: 5px 5px 15px 5px gray inset;
+            /* 오른쪽 5, 아래 5, 흐림 15, 번짐 5, 회색 그림자 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

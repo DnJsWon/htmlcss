@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경로</title>
+</head>
+<body>
+    <!-- 
+        *Directory 경로
+        HTML 파일에서 경로(Path)는 파일 시스템 내의 우치를 지정하여
+        웹 페이지에서 다른 파일이나 리소스를 참조하는데 사용
+        경로는 두가지로 구분
+            - 상대 경로(Relative Path)
+            - 절대 경로(Absolute Path)
+
+            /       절대 경로
+            ./      현재 경로
+            ../     상위 경로
+    -->
+    <h1>경로</h1>
+
+    <ul> 상대경로 
+         <!-- 1. 동일한 폴더 내의 파일 참조 -->
+         <li><a href="same_route.html">same route - 1이지만 그냥 git 시험해보기 위해 아무거나 써봄</a></li>
+         <li><a href="./same_route.html">same route -2</a></li>
+         <!-- 2. 하위 폴더의 파일 참조 -->
+         <li><a href="./sub/sub_route.html">sub route</a></li>
+         <!-- 3. 상위 폴더의 파일 참조 -->
+         <li><a href="../home.html">home</a></li>
+    </ul>
+
+    <br>
+    <ul> 절대경로
+         <!-- 1. 동일한 폴더 내의 파일 참조 -->
+         <li><a href="C:\vscode_workspace14\web_front\HTML\0.route\same_route.html">same route</a></li>
+         <!-- 2. 하위 폴더의 파일 참조 -->
+         <li><a href="C:\vscode_workspace14\web_front\HTML\0.route\sub\sub_route.html">sub route</a></li>
+         <!-- 3. 상위 폴더의 파일 참조 -->
+         <li><a href="C:\vscode_workspace14\web_front\HTML\home.html">home</a></li>
+    </ul>
+
+    
+
+</body>
+</html>

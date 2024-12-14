@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 문자 객체 </title>
+</head>
+<body>
+  <script> //0123456789abcdef
+    var t = "Hello Thank you good luck to you";
+    document.write(t.charAt(16), "<br>");//문자열을 문자배열로보고, index16번문자추출 charAt(16)
+    document.write(t.indexOf("you"), "<br>");//"you"패턴이 나타나는 첫번째 index번호
+    document.write(t.indexOf("you",16), "<br>");//index번호 16이후부터 나타나느 "you"패턴
+    document.write(t.indexOf("kim"), "<br>");//해당패턴이 없으면 -1 리턴
+    document.write(t.lastIndexOf("you"), "<br>");//"you"패턴이 나타나는 첫번째 index번호
+    document.write(t.lastIndexOf("you",25), "<br>");//index번호 
+    
+    document.write(t.match("luck"), "<br>");//해당패턴있으면 출력
+    document.write(t.match("kim"), "<br>");//없으면 null
+    
+    document.write(t.search("you"), "<br>");// 있으면 index번호
+    document.write(t.search("kim"), "<br>");//없으면 -1
+    
+    document.write(t.substr(21,4),"<br>");//index21번부터 4개 추출
+    document.write(t.substring(6,12),"<br>");//index12번부터 11번까지 추출
+
+    document.write(t.replace("you", "me"), "<br>");//matching되는 첫번재 단어 변경
+    document.write(t.toLowerCase(),"<br>");
+    document.write(t.toUpperCase(),"<br>");
+
+    document.write(t.length,"<br>");//
+
+    var s = t.split(" ");// join : [] -> "",  split : "" -> []
+    console.log(s);
+    console.log(s[0]);
+    console.log(s[4]);
+
+    var str = "A";
+    var t =str.charCodeAt(0);
+    document.write(t, "<br>");// "A" -> ASCII
+    document.write(String.fromCharCode(65), "<br>"); // ASCII -> "A"
+  </script>
+  
+</body>
+</html>

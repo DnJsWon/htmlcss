@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 함수 </title>
+</head>
+<body>
+  <script>
+    var count = 0;
+
+    //함수 호이스팅애 의해 뒤에 선언된 함수가 호출이됨.
+    myFunc(); //함수호출
+
+    function myFunc(){
+      count++;
+      document.write("hello" + count, "<br>");
+    }
+
+    myFunc(); //함수호출
+
+    theFnc(); //익명함수로 선언된 함수는 호이스팅이 안됨
+
+    var theFnc = function(){
+      count++;
+      document.write("bye" + count, "<br>");
+    }
+
+    theFnc();
+
+  </script>
+</body>
+</html>

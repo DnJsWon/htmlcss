@@ -1,0 +1,99 @@
+body{
+    font: 14px 맑은 고딕;
+}
+.container{
+    /* position: absolute; */
+    width: 960px;/*일반적인 모니터*/
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+}
+header{
+    position: relative;
+    height: 280px;
+    background-image: url('../../../html5-css3-master/10/images/bg.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+/* >는 바로 밑의 자식만을 지정 */
+header > h1{
+    position: absolute;
+    right: 20px; /*헤더 기준 오른쪽 20px*/
+    bottom:  70px;
+    font-size: 3em;
+    color: #ffc;
+    text-shadow: 1px 2px 2px #000;
+}
+header h2{
+    position: absolute;
+    right: 20px; /*헤더 기준 오른쪽 280px*/
+    bottom:  30px;
+    font-size: 2em;
+    color: #ff0;
+    text-shadow: 0px 1px 1px #000;
+}
+.navi{
+    position: relative;
+    background: #271717;
+    margin-top: -15px; /* 이미지 안으로 들어가게 만듦*/
+    width: 960px;
+    height: 60px;
+}
+.navi > ul{
+    list-style-type: none;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.navi ul li{
+    display: inline-block;
+    font-size: 15px;
+}
+.navi a, .navi:visited{
+    padding: 10px 5px 5px 35px;
+    display: block;
+    width: 150px;
+    color: #fff;
+    text-decoration: none;
+}
+.navi a:hover, .navi a:active, .navi a:focus{
+    text-shadow: 0px 2px 2px #000;
+    color: #fc0;
+}
+.sidebar{
+    float: right;
+    width: 200px;
+    height: 550px;
+    background-color: #dfd;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sidebar img{
+    margin-top: 5px;
+    border: 1px;
+    text-align: center;
+}
+.content{
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 720px;
+    float: left;
+}
+header, section, footer, aside, article, figure{
+    display: block;
+}
+.banner{
+    margin: 0 10px 15px 10px;
+    padding: 0;
+}
+.footer{
+    clear: both;
+    background-color: #271717;
+    color: #dfd;
+}
+.footer address, .footer>p{
+    display: inline-block;
+    margin-left: 20px;
+}

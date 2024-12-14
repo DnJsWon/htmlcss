@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 함수 </title>
+</head>
+<body id="theBody">
+  <script>
+    //전역 변수
+   var color = ["white","yellow", "aqua", "purple"];
+   
+   var i =0;
+    
+  function changeColor(){
+     i++;
+     if(i >=color.length){
+      i=0;
+     }
+     //getElementById("theBody") 태그중엣  id가 "theBody"인것 추출
+     var bodyTag = document.getElementById("theBody");
+     bodyTag.style.backgroundColor = color[i];
+  }
+  </script>
+    <button onclick="changeColor();"> 배경색 바꾸기 </button>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #block img{
+            /* block 내의 img에 대하여 */
+            margin: 10px;
+            display: block; /*인라인 요소를 블럭요소처럼 보이기*/
+
+        }
+        .second{
+            margin: 30px !important;
+        } /*box 모델의 마진은 위 아래 겹쳐질때 큰 쪽 마진만 선택*/
+    </style>
+</head>
+<body>
+    <div id="block">
+        <img src="../../../html5-css3-master/08/images/pic1.jpg" alt="">
+        <img class= "second" src="../../../html5-css3-master/08/images/pic2.jpg" alt="">
+        <img src="../../../html5-css3-master/08/images/pic3.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>2단 레이아웃</title>
+    <style>
+        div {
+			border: 1px solid #ccc;
+		}
+		#container {
+			width:960px;
+			padding:20px;			
+			margin:0 auto;
+		}
+		#header {
+			padding:20px;
+			margin-bottom:20px;
+		}
+		#contents {
+			width: 620px;
+			padding: 20px;
+			float: left;
+			margin-bottom: 20px;
+		}
+		#sidebar {
+			width: 220px;
+			padding: 20px;
+			float: right;
+			margin-bottom: 20px;
+			background:#eee;
+		}
+		#footer {
+			clear:both;
+			padding:20px;
+		}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+			<h1>사이트 제목</h1>
+		</div>
+		<div id="sidebar">
+			<h2>사이드 바</h2>
+            <ul>
+                <li>모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과 조건을 민주주의원칙에 따라 법률로 정한다.</li>
+
+            </ul>
+		</div>
+		<div id="contents">
+			<h2>본문</h2>
+            <p>공무원인 근로자는 법률이 정하는 자에 한하여 단결권·단체교섭권 및 단체행동권을 가진다. 대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국무위원은 국무총리의 제청으로 대통령이 임명한다. 공개하지 아니한 회의내용의 공표에 관하여는 법률이 정하는 바에 의한다.</p>
+
+            <p>국회의원이 회기전에 체포 또는 구금된 때에는 현행범인이 아닌 한 국회의 요구가 있으면 회기중 석방된다. 군사법원의 조직·권한 및 재판관의 자격은 법률로 정한다. 근로조건의 기준은 인간의 존엄성을 보장하도록 법률로 정한다. 법률안에 이의가 있을 때에는 대통령은 제1항의 기간내에 이의서를 붙여 국회로 환부하고, 그 재의를 요구할 수 있다. 국회의 폐회중에도 또한 같다.</p>
+		</div>
+		<div id="footer">
+			<h2>푸터</h2>
+            <p>국회의원은 법률이 정하는 직을 겸할 수 없다. 헌법재판소 재판관의 임기는 6년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다.</p>
+		</div>
+    </div>
+</body>
+</html>

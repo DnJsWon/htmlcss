@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.min.js"></script>
+
+  <script>
+  $(function(){
+//data({키,벨류})
+    $("#btn1").data({"text":"javascript"}).on({"mouseover":overFnc, "mouseout":outFnc});
+
+
+  $("#btn2").data({"text":"welcome"}).on({"mouseover":overFnc,"mouseout":outFnc});
+
+
+//이름있는 함수를 선어하여 여러군데 사용가능 $(this) - 이벤트가 발생한 타겟
+  function overFnc(){$(".txt").text($(this).data("text"));}
+  function outFnc(){$(".txt").text("");}
+
+});
+  </script>
+</head>
+<body>
+  <p><button id="btn1">버튼1</button></p>
+  <p><button id="btn2">버튼2</button></p>
+  <p class="txt"></p>
+</body>
+</html>

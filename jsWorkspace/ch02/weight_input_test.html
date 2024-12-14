@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 적정 몸무게 구하기 </title>
+<script>
+//적정체중 = (본인신장 -100)*0.9
+//결과
+/*
+  신장:180(cm) - prompt();
+  체중:74(kg)  - prompt();
+  적정체중:(180-100)*0.9 = 72kg 
+  결과:적정체중은 72kg이며, 현재 적정 체중에서 2kg초과한것을 알 수있습니다. document.write()
+*/
+var userHeight;// = 180;//신장
+var userWeight;// = 74; //체중
+
+userHeight=prompt("신장:");
+userWeight=prompt("체중:");
+
+
+//적정 체중 = (userWeight - 100)*0.9
+var result = (userHeight - 100)*0.9;
+var abresult = userWeight - result;
+document.write("적정체중은 "+result+"kg이며, 현재 적정 체중에서 "+abresult+"kg초과한것을 알 수있습니다.",'<br>');
+// result userWeight비교,
+// userWeight >= result - 5 이고 userWeight <= result + 5  
+//   적정체중 - 5 <= userWeight <= 적정체중 + 5 적정체중
+var result2 = (userWeight >= result - 5) && 
+(userWeight <= result + 5 ) ;
+var result3 = result2 ? "적정체중입니다.":"적정 체중이 아닙니다.";
+document.write(result3);
+
+
+</script>
+</head>
+<body>
+</body>
+</html>

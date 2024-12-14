@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $(".btn1").on("click",function(e){//e 이벤트 타겟, 이벤트 종류
+            e.preventDefault();//요소의 원래 기본동작을 못하게 막는 함수 preventDefault()
+            $(".txt1").css("background-color","#ff0");
+      });
+
+      
+    });
+  </script>
+</head>
+<body>
+  <p><a href="http://www.easyspub.co.kr/" class="btn1">버튼1</a></p>
+	<p class="txt1">내용1</p>
+	<p><a href="http://www.easyspub.co.kr/" class="btn2">버튼2</a></p>
+	<p class="txt2">내용2</p>
+	<p><button class="btn3">버튼3</button></p>
+	<p class="txt3">내용3</p>
+
+</body>
+</html>

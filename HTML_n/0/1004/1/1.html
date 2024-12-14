@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[title^='eng']{
+            background: url(../../../html5-css3-master/12/images/us.png) no-repeat left center;
+            padding: 5px 25px;
+        }
+        a[title^='jap']{
+            background: url(../../../html5-css3-master/12/images/jp.png) no-repeat left center;
+            padding: 5px 25px;
+
+        }
+        a[title^='ch']{
+            background: url(../../../html5-css3-master/12/images/ch.png) no-repeat left center;
+            padding: 5px 25px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        ul li{
+            list-style-type: none;
+            display: inline;
+            margin: 10px;
+        }
+        a[href $='hwp']{
+            background: url(../../../html5-css3-master/12/images/hwp_icon.gif) center right no-repeat;
+            padding: 5px 25px;
+        }
+        a[href $='xls']{
+            background: url(../../../html5-css3-master/12/images/excel_icon.gif) center right no-repeat;
+            padding: 5px 25px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>외국어 서비스</li>
+        <li><a href="#" title="english" target="_blank">영어</a></li>
+        <li><a href="#" title="japanese" target="_self">일본어</a></li>
+        <li><a href="#" title="chinese" target="_top">중국어</a></li>
+    </ul>
+    <hr>
+    <ul>
+        <li>
+            <a href="intro.hwp">hwp 파일</a>
+        </li>
+        <li>
+            <a href="intro.xls">xls 파일</a>
+        </li>
+    </ul>
+</body>
+</html>

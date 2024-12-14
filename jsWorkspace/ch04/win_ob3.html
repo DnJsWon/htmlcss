@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Window 객체 </title>
+  <script>
+    var addNum = 0;
+    //내장함수 - 일정시간 후 1회 실행.
+    var auto = setTimeout(function(){
+      addNum++;
+      console.log(addNum);
+    }, 5000);//내장함수 setTimeout(콜백함수,시간);
+
+    console.log("auto:", auto);
+
+  </script>
+</head>
+<body>
+  <h1>일정 시간 후 한번만 값 증감시키기</h1>
+  <p> 콘솔 패널을 열어 확인하세요.</p>
+</body>
+</html>

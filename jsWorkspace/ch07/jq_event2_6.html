@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.min.js"></script>
+
+  <script>
+  $(function(){
+		// 이벤트 추가후 클래스추가시 적용안됨
+		// mouseover이벤트 발생시 처리
+		$(".btn_1.on").on("mouseover focus",function(){ alert("HELLO!");});
+		//도큐먼트 객체생성시(화면에 보여질때)
+		$(".btn_1").addClass("on");
+
+		//문서에 이벤트 처리-문서전체가 완성된 이후에 이베트 추가
+		$(document).on("mouseover focus",".btn_2.on", function(){
+			alert("WELCOME!");
+		});
+		////도큐먼트 객체생성시(화면에 보여질때)
+		$(".btn_2").addClass("on");
+
+});
+  </script>
+</head>
+<body>
+  <div id="wrap">
+		<p><button class="btn_1">버튼1</button></p>
+		<p><button class="btn_2">버튼2</button></p>
+	</div>
+</body>
+</html>

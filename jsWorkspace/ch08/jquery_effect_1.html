@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $(".btn2").hide();
+      
+      $(".btn1").on("click",function(){
+        $(".box").slideUp(1000,"linear",function(){
+          $(".btn1").hide();
+          $(".btn2").show();
+        })
+      });
+
+      $(".btn2").on("click",function(){
+        $(".box").fadeIn(1000,"swing",function(){
+          $(".btn1").hide();
+          $(".btn2").show();
+        })
+      });
+
+      $(".btn3").on("click", function(){ $(".box").slideToggle(1000, "linear")});
+      $(".btn4").on("click", function(){ $(".box").fadeTo("fast", 0.3)});
+      $(".btn5").on("click", function(){ $(".box").fadeTo("slow", 1)});
+
+    });
+  </script>
+  <style>
+    .content{
+      width: 400px;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+ <p><button class="btn1">slieUp</button>
+    <button class="btn2">fadeIn</button>
+ </p>
+ <p><button class="btn3">toggleSlide</button>
+ </p>
+
+ <p><button class="btn4">fadeTo(0.3)</button>
+  <button class="btn5">fadeTo(1)</button>
+</p>
+
+ <div class="box">
+  <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum sollicitudin neque, sit amet efficitur dolor ornare ac. Sed ultricies neque nibh, feugiat placerat odio iaculis eget. Suspendisse gravida dolor sit amet nisi lobortis laoreet. Sed faucibus arcu ligula, quis tempus velit finibus id. Nam faucibus quam erat, nec bibendum neque cursus quis. Vestibulum vel ultricies felis. Quisque imperdiet viverra massa vel pellentesque. Nulla iaculis dignissim venenatis. Phasellus a feugiat lacus, et volutpat sem. Pellentesque cursus, felis nec interdum iaculis, lectus lacus gravida ligula, a efficitur felis magna non sem. Nam scelerisque magna nec blandit aliquet. Quisque at est ornare, semper nunc sit amet, congue massa. Quisque lectus sem, fermentum sit amet ex ac, interdum volutpat urna.
+  </div>
+
+ </div>
+</body>
+</html>

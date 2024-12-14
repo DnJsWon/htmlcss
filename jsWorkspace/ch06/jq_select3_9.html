@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체 조작 및 생성 </title>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(function(){
+    
+      $("#wrap p:eq(2)").after("<p>After</p>");
+      $("<p>insertAfter</p>").insertAfter("#wrap p:eq(1)");
+
+      $("#wrap p:eq(1)").before("<p>Before</p>");
+      $("<p>insertBefore</p>").insertBefore("#wrap p:eq(0)");
+
+      ///
+      $("<li>appendTo</li>").appendTo("#listZone"); //추가할요소.appendTo(요소);
+      $("#listZone").prepend("<li>prepend</li>");  //요소.prepend(추가할요소);
+     
+    });
+  </script>
+</head>
+<body>
+  <div>
+    <p>내용1</p>
+    <p>내용2</p>
+    <p>내용3</p>
+  </div>
+
+<div id="wrap">
+  <p>내용1</p>
+  <p>내용2</p>
+  <p>내용3</p>
+</div>
+<hr>
+<ul id="listZone">
+  <li>리스트</li>
+</ul>
+</body>
+</html>

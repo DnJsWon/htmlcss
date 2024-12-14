@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var id ='hong';
+    var pwd ='1234';
+
+    var user_id=prompt('아이디?:');
+    var user_pwd=prompt('비밀번호?:');
+
+    if(user_id==id){//값 비교시 ==로 비교
+      if(user_pwd==pwd){
+          document.write(user_id+"님 반갑습니다.");
+      }else{
+        document.write("비밀번호가 일치하지 않습니다.");
+        location.reload();
+      }
+    }else{
+      document.write('아이디가 일치하지않습니다.');
+      location.reload();//브라저의 location객체의reload()함수실행
+    }
+  </script>
+  
+</body>
+</html>

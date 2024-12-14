@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>객체 조작 및 생성 </title>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(function(){
+     var topNum = $("h1").offset().top;
+     console.log(topNum);
+     $(window).scrollTop(topNum);
+
+     var sct = $(window).scrollTop();
+     console.log(sct);
+     
+    });
+  </script>
+  <style>
+    *{padding:0; margin: 0;}
+    body{line-height: 1;}
+
+    #wrap{
+      height: 5000px;
+      padding-top: 2000px;
+    }
+  </style>
+</head>
+<body>
+<div id="wrap">
+  <h1>위치 메소드</h1>
+</div>
+
+</body>
+</html>

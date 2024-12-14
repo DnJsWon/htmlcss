@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 함수 </title>
+</head>
+<body>
+  <script>
+   var num = 0;
+   function testFnc(){
+     
+    num++;
+    document.write(num, "<br>");
+
+    if(num == 10)  return;// 반드시 빠져나가는 로직 필수
+
+    testFnc(); //함수내에서 자신을 호출
+   }
+
+   //호출
+   testFnc();
+
+  </script>
+  
+</body>
+</html>

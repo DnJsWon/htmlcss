@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var arr_1 = ["사당","교대","방배","강남"];
+    var arr_2 = ["신사","압구정","옥수"];
+
+
+    var result = arr_1.join("-"); //배열을 하나의 문자열로 합치는 함수
+    document.write(result, "<br>");
+    console.log("arr_1타입:",typeof(arr_1), "결과",result, "타입:", typeof(result));
+
+    result = arr_1.concat(arr_2);//두 배열 결합 
+    console.log("결과",result);
+
+    result = arr_1.slice(1,3);// slice(시작index, 끝index), 시작(1)<=범위<끝(3)
+    console.log("결과",result);
+
+    result = arr_1.sort();//기본 오름차순
+    console.log("result결과:",result, "arr_1결과:",arr_1);//원본배열이 정렬됨.
+
+    result=arr_2.reverse(); //순서를 반대로 
+    console.log("arr_2.reverse()결과:",result, arr_2);//원본 배열 순서 바뀜.
+
+
+
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배열 객체</title>
+</head>
+<body>
+  <script>
+    //var arr = new Array(30,"따르릉", true);
+    var arr = [20, "따르릉", true];//배열 표기법 []
+
+    document.write("<h3>배열값 가져오기-1</h3>");
+    document.write(arr[0], "<br>");
+    document.write(arr[1], "<br>");
+    document.write(arr[2], "<br>");
+    document.write("<hr>");
+
+    //
+    document.write("<h3>배열값 가져오기-2</h3>");
+    for(var i=0;i<arr.length;i++){
+      document.write(arr[i], "<br>");
+    }
+
+    document.write("<hr>");
+    document.write("<h3>배열값 가져오기-3</h3>");
+    for(k in arr){// k in arr - arr에 k가 있으면 true
+      document.write(arr[k], "<br>");// k가 인덱스로 사용됨.
+    }
+
+    document.write("<hr>");
+    
+    var i=0;
+    document.write(arr[(i++)],"<br>");
+    document.write(arr[(i++)],"<br>");
+    document.write(arr[(i++)],"<br>");
+
+  </script>
+</body>
+</html>
